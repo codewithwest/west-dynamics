@@ -76,9 +76,7 @@
 
 
 
-.projects .columns .list2{
 
-}
 .projects .columns .list2 .design{
     margin: 8%;
     font-size: large;
@@ -117,14 +115,13 @@ width: 60%;
 
 
 .projects .columns .list1{
-    
     text-align: center;
     display:inline;
     list-style: none;
     text-align: left;   
 }
 
-.projects .columns li{
+.projects .columns .list1 li{
     margin-top: 10%;
     margin-bottom: 5%;
 }
@@ -132,10 +129,9 @@ width: 60%;
 .projects .column3{
  position: relative;
     display: inline;
-    width: 30%;
+    width: 34%;
     margin: 1%;
-    height: 90%;
-    
+    height: 60%;
     box-shadow: 6px 6px 16px rgba(165, 5, 165,0.6);
     background: white;
     animation: animate 6s linear infinite ;
@@ -174,12 +170,10 @@ width: 60%;
     height: 98%;
     width: 99%;
 
-
 }
-
-
 .projects .column3 .list3 ul{
-    display: flex;
+    display: inline-block;
+    flex-wrap: wrap;
 }
 
 .projects .column3 .list3  li{
@@ -187,5 +181,10 @@ width: 60%;
     list-style: none;
     
 }
+.projects .column3 .list3 li img{
+    height: calc(100%/3);
+    width: calc(100%/2);
+}
+
 
 
