@@ -1,65 +1,65 @@
-import  { React } from 'react';
+import  React from 'react';
 import './Projects.css';
 import profile from '../assets/profile.jpg';
 
 
-
 function ProjectsData() {
-    /*
-    const [data, setData] = React.useState(null);
+
+    const [data, setData] = React.useState();
     //database import
     React.useEffect(() => {
-        fetch("/api").then((res) => res.json())
-        .then((data)=> setData(data.message));
-      },[]
-      );
-    */
-        
+        fetch("/api").then(async (res) => res.json())
+        .then((data)=> setData(data))
+        .then(console.log(data));
+      },[data]
+      );   
+
     return(
         
-
         
     <div className='projects-container'>
         <div className='row'>
+            
             <div className='row-child' id='row-child1'>
                 <div className='name'>
-                    <p>WEB APPLICATION DEVELOPMENT</p>
+                    <p></p>
+                    <p>{!data ? " Loading..." : data[0].project}</p>
                 </div>
                 
                 <div className='projects'>
                     <div className="columns">
                     <div className='list1'>
-                        <h3>REACT WEB APP</h3>
-                        <h3> <span className='subtitle'>with</span> NODE BACKEND</h3>
-                        <p>The web App was developed to help guide self 
-                            into a good practice for backend after quite a 
-                            while of front-End. </p>
-                            <h3>Decicion</h3><br /> 
-                            <p className='second'>The decision to do node as my backend 
-                            because of the inroduction I had earlier in 
-                            the year of an intermediate course to App 
-                            development with react-native.  
+                        <h3>{!data ? " Loading..." : data[0].projectType}</h3>
+                        <h3> <span className='subtitle'>with</span>
+                        {!data ? " Loading..." : data[0].subtitle}</h3>
+                        <p>{!data ? " Loading..." : data[0].desc1}
+                             </p>
+                            <h3>
+                            {!data ? " Loading..." : data[0].subtitle2}
+                                </h3><br /> 
+                            <p className='second'>
+                            {!data ? " Loading..." : data[0].desc2}
                             </p>
                         </div>
                         </div>
                         <div className="columns">
                         <div className='list2'>
-                        <h2>Design</h2>
+                        <h2>
+                        {!data ? " Loading..." : data[0].projectDesign}
+                            </h2>
                         <li className='design'><p>
-                            To be blunt i never thought i would fall inlove with
-                            web development, but then hey! here we are and you 
-                            gotta admit this is b*tchin. 
+                        {!data ? " Loading..." : data[0].desc3a}
+                            
                             </p></li>
                             <li className='design'><p>
-                            This is all the info you can get in confidence, 
-                            but to trully get the glimpse of what you signing up 
-                            with click the link to the actual code.  
+                            {!data ? " Loading..." : data[0].desc3b}
                             </p></li>
                             <li className='design'> 
                             <h2> Enjoy!!</h2>
                             </li>
-                        <li className='react-button'><a href='https://github.com/codewithwest/west-dynamics.git'>React WebApp</a></li>
-                        
+                        <li className='react-button'><a href='https://github.com/codewithwest/west-dynamics.git'>
+                            {!data ? " Loading..." : data[0].link}
+                            </a></li>
                         </div>
                         </div>
 
@@ -80,50 +80,46 @@ function ProjectsData() {
 
             <div className='row-child' id='row-child2'>
                     <div className='name'>
-                        <p>WEBSITE DEVELOPMENT</p>
+                        <p>{!data ? " Loading..." : data[1].project}</p>
                     </div>
                     
                     <div className='projects'>
                         <div className="columns">
                         <div className='list1'>
-                            <h3>CLASSIC HTML, CSS JAVASCRPT</h3>
-                            <h3> <span className='subtitle'>with a touch of </span>REACT</h3>
-                            <p>The Website is a long standing plan i had,
-                                to development my own company site where I
-                                can show off my skills, but also a placs where
-                                employers or service seeker can come and view 
-                                the cotents and buy if they like.
+                            <h3>{!data ? " Loading..." : data[1].projectType}</h3>
+                            <h3> <span className='subtitle'>with a touch of </span>
+                            {!data ? " Loading..." : data[1].subtitle}
+                            </h3>
+                            <p>{!data ? " Loading..." : data[1].desc1}
+                               
                             </p>
-                                <h3>Decicion</h3><br /> 
+                                <h3>{!data ? " Loading..." : data[1].subtitle2}
+                                    </h3><br /> 
                                 <p className='second'>
-                                    I went with the classic builders because,
-                                    to further yourself  in web development, 
-                                    your  roots have to be this languages and
-                                    so i used them to showcase where i started.
+                                {!data ? " Loading..." : data[1].desc2}
+                                   
                                 </p>
                             </div>
                             </div>
                             <div className="columns">
                             <div className='list2'>
-                            <h2>Design</h2>
+                            <h2>{!data ? " Loading..." : data[1].projectDesign}
+                                </h2>
                             <li className='design'><p>
-                                The design is vastly one  that aims to improve 
-                                per given chance with new ideas  getting better 
-                                with every update and taking it one push at a time.
+                                {!data ? " Loading..." : data[1].desc3a}
+                                
                                 </p></li>
                                 <li className='design'><p>
-                                It gives such great pleasure to get to show off my 
-                                talents, and if  you are reading this  then you are 
-                                most likes intrigued by what you saw above and wanted 
-                                to see what is under the hood, from us in tech we say
-                                WELcome To West Dynamics.
+                                    {!data ? " Loading..." : data[1].desc3a}
+                                
                                 </p></li>
                                 <li className='design'> 
                                 <h2> Enjoy!!</h2>
                                 </li>
                             <li className='react-button'>
                                 <a href='https://westdynamics.tech'>
-                                    Westdynamics.tech
+                                {!data ? " Loading..." : data[0].link}
+                                   
                                     </a></li>
                             
                             </div>
@@ -146,21 +142,23 @@ function ProjectsData() {
          
             <div className='row-child' id='row-child3'>
             <div className='name'>
-                <p>Mobile/App Development </p>
+                <p>{!data ? " Loading..." : data[2].project}
+                     </p>
             </div>
             
             <div className='projects'>
                 <div className="columns">
                 <div className='list1'>
-                <h3>REACT-NATIVE APP</h3>
-                    <h3> <span className='subtitle'>with</span> FIREBASE BACKEND</h3>
-                    <p>The React-Native App was developed first as an assignment
-                        but then turned into a business App idea for my start up.  </p>
-                        <h3>Decicion</h3><br /> 
-                        <p className='second'>
-                            The use of React-Native with flutter is the adaptation
-                            flutter has with the App development on different 
-                            levels.
+                <h3>{!data ? " Loading..." : data[2].projectType}
+                    </h3>
+                    <h3> <span className='subtitle'>with</span>{!data ? " Loading..." : data[1].subtitle}
+                     </h3>
+                    <p>{!data ? " Loading..." : data[2].desc1}
+                         </p>
+                        <h3>{!data ? " Loading..." : data[2].subtitle2}
+                            </h3><br /> 
+                        <p className='second'>{!data ? " Loading..." : data[2].desc2}
+                         
                         </p>
                     </div>
                     </div>
@@ -180,21 +178,22 @@ function ProjectsData() {
                 </div>
                     <div className="columns">
                     <div className='list2'>
-                    <h2>Design</h2>
+                    <h2>{!data ? " Loading..." : data[2].projectDesign}
+                        </h2>
                     <li className='design'><p>
-                        The design behind the App was for re-usibility of the code 
-                        and accebility of the user in mind.
+                    {!data ? " Loading..." : data[2].desc3a}
+                      
 
                         </p></li>
-                        <li className='design'><p>
-                            My Passion for programming grows because of the edge to 
-                            improve on innovation in different languages.The classic 
-                            feel of using javascript, has a good feel on Application development. 
+                        <li className='design'><p>{!data ? " Loading..." : data[2].desc3b}
+                            
                         </p></li>
                         <li className='design'> 
                         <h2> Enjoy!!</h2>
                         </li>
-                    <li className='react-button'><a href='https://github.com/codewithwest/west-dynamics.git'>React-Native App</a></li>
+                    <li className='react-button'><a href='https://github.com/codewithwest/west-dynamics.git'>
+                    {!data ? " Loading..." : data[2].link}
+                       </a></li>
                     
                     
                     </div>
@@ -214,18 +213,18 @@ function ProjectsData() {
             <div className='projects'>
                 <div className="columns">
                 <div className='list1'>
-                <h3>FLUTTER APP</h3>
+                <h3>{!data ? " Loading..." : data[3].projectType}
+                    </h3>
                     <h3> <span className='subtitle'>with </span> 
-                    FIREBASE BACKEND</h3>
-                    <p>
-                        A new journey with flutter development, 
-                        Took on a new language and it is paying off.
-                        Good investment for Multi-Platform development. 
+                    {!data ? " Loading..." : data[3].subtitle}
+                    </h3>
+                    <p>{!data ? " Loading..." : data[3].desc1}
+                       
                     </p>
-                        <h3>Decicion</h3><br /> 
-                        <p className='second'>
-                            As new languages emerge one should advance and expand their knowledge, 
-                            and that is what my flutter development represents.
+                        <h3>{!data ? " Loading..." : data[3].subtitle2}
+                            </h3><br /> 
+                        <p className='second'>{!data ? " Loading..." : data[3].desc2}
+                            
                         </p>
                     </div>
                     </div>
@@ -245,24 +244,22 @@ function ProjectsData() {
                 </div>
                     <div className="columns">
                     <div className='list2'>
-                    <h2>Design</h2>
-                    <li className='design'><p>
-                        The design behind the App was to emulate the classic 
-                        React-Native development with a slightly development 
-                        momvement into code.
+                    <h2>{!data ? " Loading..." : data[3].projectDesign}
+                        </h2>
+                    <li className='design'><p>{!data ? " Loading..." : data[3].desc3a}
+                       
 
                         </p></li>
-                        <li className='design'><p>
-                            My Passion for programming grows because of the edge to 
-                            improve on innovation in different languages.The classic 
-                            feel of using flutter, has a good feel on Application development. 
+                        <li className='design'><p>{!data ? " Loading..." : data[3].desc3b}
+
                         </p></li>
                         <li className='design'> 
                         <h2> Enjoy!!</h2>
                         </li>
                     <li className='react-button'>
                         <a href='https://github.com/codewithwest/west-dynamics.git'>
-                            Flutter App
+                        {!data ? " Loading..." : data[3].link}
+                           
                             </a></li>     
                     </div>
                     </div>
@@ -271,7 +268,7 @@ function ProjectsData() {
                        
             <div className='row-child' id='row-child4'>
             <div className='name'>
-                <p>DeskTop </p> 
+                <p> {!data ? " Loading..." : data[4].project}</p> 
             </div>
             
             <div className='projects'>
@@ -291,44 +288,36 @@ function ProjectsData() {
                 </div>
                 <div className="columns">
                 <div className='list1'>
-                <h3>EXPO REACT APP</h3>
+                <h3>{!data ? " Loading..." : data[4].projectType}</h3>
                     <h3> <span className='subtitle'>with </span> 
-                     FIREBASE BACKEND</h3>
-                    <p> 
-                        From website to webapp to mobile, with expo react
-                        desktop uses have been integrated and have been 
-                        very helpful in designing well scallable application
-                         with the same framework.  
+                    {!data ? " Loading..." : data[4].subtitle}
+                     </h3>
+                    <p> {!data ? " Loading..." : data[4].desc1}
+                        
                     </p>
-                        <h3>Decicion</h3><br /> 
+                        <h3>{!data ? " Loading..." : data[4].subtitle2}</h3><br /> 
                         <p className='second'>
-                            Since Expo has alot of cross into react-native
-                             the transition was not that difficult it was a pretty 
-                             smooth transition.
+                        {!data ? " Loading..." : data[4].desc2}
                         </p>
                     </div>
                     </div>
                     
                     <div className="columns">
                     <div className='list2'>
-                    <h2>Design</h2>
+                    <h2>{!data ? " Loading..." : data[4].projectDesign}</h2>
                     <li className='design'><p>
-                        I have used alot of desktop applications  and 
-                        so the  design mostly targeted an improveement to 
-                        the softwares i usually use on my pc. 
+                    {!data ? " Loading..." : data[4].desc3a}
                         </p></li>
                         <li className='design'><p>
-                            innovativeness is not just a choice, but a gift, 
-                            having the edge to make it better for the next person,
-                            than it was for you and so that is the perpose behind 
-                            the development just to add on. 
+                        {!data ? " Loading..." : data[4].desc3b}
                         </p></li>
                         <li className='design'> 
                         <h2> Enjoy!!</h2>
                         </li>
                     <li className='react-button'>
                         <a href='https://github.com/codewithwest/west-dynamics.git'>
-                            React Desktop</a></li>
+                        {!data ? " Loading..." : data[4].link}
+                            </a></li>
                     
                     
                     </div>
@@ -362,44 +351,41 @@ function ProjectsData() {
                 </div>
                 <div className="columns">
                 <div className='list1'>
-                <h3> </h3>
-                    <h3> <span className='subtitle'>with</span> FLUTTER BACKEND</h3>
-                    <p>
-                    From website to webapp to mobile, with Flutter desktop uses 
-                    have been integrated and have been very helpful in designing 
-                    well scallable application with the same framework.
+                <h3> {!data ? " Loading..." : data[5].projectType}</h3>
+                    <h3> <span className='subtitle'>with</span> 
+                    {!data ? " Loading..." : data[5].subtitle}
+                    </h3>
+                    <p>{!data ? " Loading..." : data[5].desc1}
+                    
                     </p>
-                         <h3>Decicion</h3><br /> 
-                        <p className='second'>
-                        Since Expo has alot of cross into react-native the 
-                        transition was just as easy as a finger down press. 
-                      
+                         <h3>{!data ? " Loading..." : data[5].subtitle2}
+                            </h3><br /> 
+                        <p className='second'>{!data ? " Loading..." : data[5].desc2}
+                        
                         </p>
                     </div>
                     </div>
    
                     <div className="columns">
                     <div className='list2'>
-                    <h2>Design</h2>
+                    <h2>{!data ? " Loading..." : data[5].projectDesign}
+                        </h2>
                     <li className='design'>
-                        <p>
-                        I have used alot of desktop applications and 
-                        so the design mostly targeted an improveement 
-                        to the softwares i usually use on my pc.
+                        <p>{!data ? " Loading..." : data[5].desc3a}
+                       
                         </p>
                         </li>
                         <li className='design'><p>
-                        Innovativeness is not just a choice, but a gift, 
-                        having the edge to make it better for the next person, 
-                        than it was for you and so that is the perpose behind 
-                        the development just to add on.
+                            {!data ? " Loading..." : data[5].desc3b}
+      
                         </p></li>
                         <li className='design'> 
                         <h2> Enjoy!!</h2>
                         </li>
                     <li className='react-button'>
                         <a href='https://github.com/codewithwest/west-dynamics.git'>
-                            Flutter Desktop
+                        {!data ? " Loading..." : data[5].link}
+                            
                             </a></li>
                     
                     
