@@ -5,7 +5,7 @@
 },
   "hosting": {
     "postdeploy": "npm start",
-    "public": "client/build",
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
