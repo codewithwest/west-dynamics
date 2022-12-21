@@ -1,0 +1,97 @@
+[
+{
+    "id": 0,
+    "project": "WEB APPLICATION DEVELOPMENT",
+    "projectType": "REACT WEB APP",
+    "subtitle": "NODE BACKEND",
+    "desc1": "The web App was developed to help guide self into a good practice for backend after quite a while of front-End.",
+    "subtitle2": "decision",
+    "desc2": "The decision to do node as my backend because of the inroduction I had earlier in the year of an intermediate course to App development with react-native.  ",
+    "projectDesign": "Design",
+    "desc3a": "To be blunt i never thought i would fall inlove withweb development, but then hey! here we are and you gotta admit this is b*tchin. ",
+    "desc3b":"This is all the info you can get in confidence, but to trully get the glimpse of what you signing up with click the link to the actual code. ",
+    "link": "React WebApp"
+
+
+},
+{
+    "id": 1,
+    "project": "WEBSITE DEVELOPMENT",
+    "projectType": "CLASSIC HTML, CSS JAVASCRPT",
+    "subtitle": "REACT",
+    "desc1": " The Website is a long standing plan i had, to development my own company site where I can show off my skills, but also a placs where employers or service seeker can come and view the cotents and buy if they like.",
+    "subtitle2": "decision",
+    "desc2": " I went with the classic builders because, to further yourself  in web development, your  roots have to be this languages and so i used them to showcase where i started.",
+    "projectDesign": "Design",
+    "desc3a": "It gives such great pleasure to get to show off my talents, and if  you are reading this  then you are most likes intrigued by what you saw above and wanted to see what is under the hood, from us in tech we say Welcome To West Dynamics.",
+    "desc3b":"The design is vastly one  that aims to improve per given chance with new ideas  getting better with every update and taking it one push at a time.",
+    "link": " Westdynamics.tech"
+
+
+},
+
+{
+    "id": 2,
+    "project": "Mobile/App Development",
+    "projectType": "REACT-NATIVE APP",
+    "subtitle": "FIREBASE BACKEND",
+    "desc1": "The React-Native App was developed first as an assignment but then turned into a business App idea for my start up. ",
+    "subtitle2": "decision",
+    "desc2": "The use of React-Native with flutter is the adaptation flutter has with the App development on different levels.",
+    "projectDesign": "Design",
+    "desc3a": "The design behind the App was for re-usibility of the code and accebility of the user in mind.",
+    "desc3b": "My Passion for programming grows because of the edge to improve on innovation in different languages.The classic feel of using javascript, has a good feel on Application development. ",
+    "link": "React-Native App" 
+
+
+},
+
+{
+    "id": 3,
+    "project": " ",
+    "projectType": " FLUTTER APP",
+    "subtitle": "FIREBASE BACKEND ",
+    "desc1": "  A new journey with flutter development, Took on a new language and it is paying off. Good investment for Multi-Platform development. ",
+    "subtitle2": "decision ",
+    "desc2": " As new languages emerge one should advance and expand their knowledge, and that is what my flutter development represents.",
+    "projectDesign": " Design",
+    "desc3a": "The design behind the App was to emulate the classic React-Native development with a slightly development momvement into code.",
+    "desc3b":"My Passion for programming grows because of the edge to improve on innovation in different languages.The classic feel of using flutter, has a good feel on Application development. ",
+    "link": " Flutter App"
+
+
+},
+
+{
+    "id": 4,
+    "project": "DeskTop",
+    "projectType": "EXPO REACT APP",
+    "subtitle": "FIREBASE BACKEND",
+    "desc1": "From website to webapp to mobile, with expo react desktop uses have been integrated and have been very helpful in designing well scallable application with the same framework.",
+    "subtitle2": "decision",
+    "desc2": "Since Expo has alot of cross into react-native the transition was not that difficult it was a pretty smooth transition.",
+    "projectDesign": "Design",
+    "desc3a": "I have used alot of desktop applications  and so the  design mostly targeted an improveement to the softwares i usually use on my pc. ",
+    "desc3b":"innovativeness is not just a choice, but a gift, having the edge to make it better for the next person, than it was for you and so that is the perpose behind the development just to add on. ",
+    "link": "React Desktop"
+
+
+},
+
+{
+    "id": 5,
+    "project": "",
+    "projectType": " FLUTTER APP",
+    "subtitle": "FLUTTER BACKEND",
+    "desc1": "From website to webapp to mobile, with Flutter desktop uses have been integrated and have been very helpful in designing well scallable application with the same framework.",
+    "subtitle2": "decision",
+    "desc2": "Since Expo has alot of cross into react-native the transition was just as easy as a finger down press. ",
+    "projectDesign": "Design",
+    "desc3a": "I have used alot of desktop applications and so the design mostly targeted an improveement to the softwares i usually use on my pc.",
+    "desc3b":"Innovativeness is not just a choice, but a gift, having the edge to make it better for the next person, than it was for you and so that is the perpose behind the development just to add on. ",
+    "link": "Flutter Desktop"
+
+
+}
+
+]

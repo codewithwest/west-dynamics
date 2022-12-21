@@ -1,6 +1,11 @@
 {
+"scripts":{
+  "start":"cd server && npm start"
+
+},
   "hosting": {
-    "public": "client",
+    "postdeploy": "npm start",
+    "public": "client/build",
     "ignore": [
       "firebase.json",
       "**/.*",
